@@ -182,7 +182,7 @@ void lcd_status()
     static uint8_t oldbuttons=0;
     //static long previous_millis_buttons=0;
     //static long previous_lcdinit=0;
-  //  buttons_check(); // Done in temperature interrupt
+    buttons_check(); // Done in temperature interrupt
     //previous_millis_buttons=millis();
     long ms=millis();
     for(int8_t i=0; i<8; i++) {

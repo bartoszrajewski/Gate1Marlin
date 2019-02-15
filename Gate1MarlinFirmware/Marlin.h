@@ -103,7 +103,7 @@ FORCE_INLINE void serialprintPGM(const char *str)
 //void get_command(); //Bartek
 //void process_commands();
 
-//void manage_inactivity(byte debug);
+void manage_inactivity(byte debug);
 
 #if X_ENABLE_PIN > -1
   #define  enable_x() WRITE(X_ENABLE_PIN, X_ENABLE_ON)
@@ -157,15 +157,15 @@ FORCE_INLINE void serialprintPGM(const char *str)
 enum AxisEnum {X_AXIS=0, Y_AXIS=1, Z_AXIS=2, E_AXIS=3};
 
 
-//void FlushSerialRequestResend();
-//void ClearToSend();
+void FlushSerialRequestResend();
+void ClearToSend();
 
-//void get_coordinates();
-//void prepare_move();
-//void kill();
-//void Stop();
+void get_coordinates();
+void prepare_move();
+void kill();
+void Stop();
 
-//bool IsStopped();
+bool IsStopped();
 
 void enquecommand(const char *cmd); //put an ascii command at the end of the current buffer.
 //void prepare_arc_move(char isclockwise);

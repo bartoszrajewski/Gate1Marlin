@@ -843,7 +843,7 @@ ISR(TIMER0_COMPB_vect)
         ADCSRA |= 1<<ADSC; // Start conversion
       #endif
       #ifdef ULTIPANEL
-        buttons_check();
+//        buttons_check();
       #endif
       temp_state = 1;
       break;
@@ -865,7 +865,7 @@ ISR(TIMER0_COMPB_vect)
         ADCSRA |= 1<<ADSC; // Start conversion
       #endif
       #ifdef ULTIPANEL
-        buttons_check();
+//        buttons_check();
       #endif
       temp_state = 3;
       break;
@@ -886,7 +886,7 @@ ISR(TIMER0_COMPB_vect)
         ADCSRA |= 1<<ADSC; // Start conversion
       #endif
       #ifdef ULTIPANEL
-        buttons_check();
+//        buttons_check();
       #endif
       temp_state = 5;
       break;
@@ -907,7 +907,7 @@ ISR(TIMER0_COMPB_vect)
         ADCSRA |= 1<<ADSC; // Start conversion
       #endif
       #ifdef ULTIPANEL
-        buttons_check();
+//        buttons_check();
       #endif
       temp_state = 7;
       break;

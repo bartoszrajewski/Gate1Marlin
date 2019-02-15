@@ -199,7 +199,7 @@ bool Stopped=false;
 
 void get_arc_coordinates();
 
-extern "C"{
+//extern "C"{
   extern unsigned int __bss_end;
   extern unsigned int __heap_start;
   extern void *__brkval;
@@ -214,7 +214,7 @@ extern "C"{
 
     return free_memory;
   }
-}
+//}
 
 //adds an command to the main command buffer
 //thats really done in a non-safe way.
@@ -1610,7 +1610,11 @@ void controllerFan()
 }
 #endif
 
-void manage_inactivity(byte debug) 
+void manage_inactivity(byte debug) {
+  
+}
+
+void manage_inactivity1(byte debug) 
 { 
   if( (millis() - previous_millis_cmd) >  max_inactive_time ) 
     if(max_inactive_time) 
